@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Navbar -->
+    <nav class="floating-navbar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>        <!-- Trigger for Login Popup -->
+        <label for="login-toggle" class="login">Login</label>
+    </nav>
+
+    <!-- Login Modal Trigger (Checkbox) -->
+    <input type="checkbox" id="login-toggle" class="login-toggle" hidden>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <label for="login-toggle" class="close-btn">&times;</label>
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Welcome to our portfolio website! We specialize in crafting elegant and modern web designs that captivate and engage users. Our expertise lies in combining aesthetic appeal with functionality to deliver exceptional digital experiences.</p>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="features">
+        <div class="glass-card">
+            <h2>Our Mission</h2>
+            <p>We aim to provide clients with visually stunning and highly functional websites that leave a lasting impression.</p>
+        </div>
+        <div class="glass-card">
+            <h2>Our Vision</h2>
+            <p>To revolutionize the web design industry by setting a benchmark for innovation, creativity, and user-centric solutions.</p>
+        </div>
+        <div class="glass-card">
+            <h2>Our Values</h2>
+            <p>We prioritize quality, transparency, and collaboration to achieve results that exceed expectations.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="features">
+        <div class="glass-card">
+            <h2>Meet the Team</h2>
+            <p>Our team comprises talented designers, developers, and strategists who work together to bring your vision to life.</p>
+        </div>
+        <div class="glass-card">
+            <h2>Why Choose Us?</h2>
+            <p>With years of experience and a passion for excellence, we ensure every project is executed flawlessly.</p>
+        </div>
+        <div class="glass-card">
+            <h2>Client Success Stories</h2>
+            <p>We take pride in the success of our clients, helping them achieve their goals through impactful digital solutions.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Modern Blue Glass Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

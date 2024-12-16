@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Navbar -->
+    <nav class="floating-navbar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>        <!-- Trigger for Login Popup -->
+        <label for="login-toggle" class="login">Login</label>
+    </nav>
+
+    <!-- Login Modal Trigger (Checkbox) -->
+    <input type="checkbox" id="login-toggle" class="login-toggle" hidden>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <label for="login-toggle" class="close-btn">&times;</label>
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Portfolio Hero Section -->
+    <section class="hero">
+        <h1>Our Portfolio</h1>
+        <p>Showcasing the information on Aqill and Aqeil.</p>
+    </section>
+
+    <!-- Portfolio Content -->
+    <section id="projects" class="features">
+        <!-- Aqill's Section -->
+        <div class="glass-card">
+            <h2>Aqill</h2>
+            <p>Lead Designer</p>
+            <p>Responsible for creating the modern and elegant design of this website, Aqill ensures every detail aligns with the project’s vision and aesthetics.</p>
+        </div>
+
+        <!-- Aqeil's Section -->
+        <div class="glass-card">
+            <h2>Aqeil</h2>
+            <p>Lead Developer</p>
+            <p>Expert in PHP, Aqeil brought the functionality to life, ensuring seamless integration and backend support for the website.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Modern Blue Glass Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

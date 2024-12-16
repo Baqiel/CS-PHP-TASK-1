@@ -1,0 +1,179 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Gradient background for story pages */
+.gradient-bg {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Doors container - stack doors vertically */
+.doors-container {
+    display: flex;
+    flex-direction: column; /* Stack doors vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between stacked doors */
+    margin-top: 40px; /* Added space above the doors */
+    margin-bottom: 40px;
+}
+
+/* Door container - bigger size and positioned in the center */
+.door-container {
+    position: relative;
+    width: 180px; /* Set width for the doors */
+    height: 250px; /* Set height for the doors */
+    margin-right: 150px;
+}
+
+/* Door styles */
+.door {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.door:hover {
+    transform: scale(1.05);
+}
+
+.door-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.door-image.closed {
+    opacity: 1;
+}
+
+.door-image.open {
+    opacity: 0;
+}
+
+.door:hover .door-image.closed {
+    opacity: 0;
+}
+
+.door:hover .door-image.open {
+    opacity: 1;
+}
+
+/* Navigation buttons */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Navigation buttons */
+.nav-button, .slide-button {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #1abc9c, #16a085); /* Teal gradient */
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover, .slide-button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #48dbfb, #0abde3); /* Cyan gradient on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .nav-button, .slide-button {
+        font-size: 0.9em;
+        padding: 8px 20px;
+    }
+}
+
+/* Custom door title styles */
+.door-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Globe styles */
+#globe {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Make the globe smaller */
+    height: auto;
+}
+
+/* Text content with horizontal margins */
+p, body > div {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for text boxes */
+p:hover, body > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles for spacing and adjustments */
+body > div {
+    margin-top: 40px; /* Additional space at the top */
+}
